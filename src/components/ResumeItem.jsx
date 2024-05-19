@@ -9,7 +9,7 @@ const ResumeItem = ({icon, year, title, desc}) => {
                 <div className={"resume__icon"}>{icon}</div>
                 <span className={"resume__date"}>{year}</span>
                 <h3 className={"resume__subtitle"}>{parse(title)}</h3>
-                <p className={"resume_description"}>{desc}</p>
+                <p className={"resume__description"}>{desc}</p>
             </div>
         </>
     )
