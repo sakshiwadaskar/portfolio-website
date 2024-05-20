@@ -155,3 +155,13 @@ img {
     text-align: center;
     line-height: 60px;
 }
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--first-color); /* Dark blue */
+    color: var(--text-white);
+    padding: 1rem;
+    text-align: center;
+}
