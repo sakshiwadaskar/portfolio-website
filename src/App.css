@@ -36,6 +36,14 @@
     --weight-800: 800;
 }
 
+.dark-theme {
+    --title-color: hsl(0, 0%, 100%);
+    --text-color: hsl(0,0%, 80%);
+    --body-color: hsl(0,0%, 7%);
+    --container-color: hsl(0,1%, 17%);
+    --border-color: hsl(0,0%, 15%);
+}
+
 /*======= BASE =======*/
 *{
     margin: 0;
@@ -160,7 +168,7 @@ footer {
     display: flex; /* Use flexbox for layout */
     flex-direction: column; /* Arrange items in a column */
     align-items: center; /* Center items horizontally */
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
     background-color: var(--first-color); /* Dark blue */

@@ -6,17 +6,41 @@ import {BsSun, BsMoon} from "react-icons/bs"
 import "./themes.css"
 import themeItem from "./ThemeItem.jsx";
 
+const getStorageColor = () => {
+    let color = 'hsl(252, 35%, 52%)';
+    if (localStorage.getItem('color')) {
+        color = localStorage.getItem('color');
+    }
+    return color;
+}
+
 const Themes = () => {
     const [showSwitcher, setShowSwitcher] = useState(false);
-    const [color, setColor] = useState('red');
+    const [color, setColor] = useState(getStorageColor());
+    const [theme, setTheme] = useState('light-theme');
+
 
     const changeColor = (color) => {
         setColor(color);
     };
 
+    const toggleTheme = () => {
+        if (theme==='light-theme'){
+            setTheme('dark-theme');
+        }
+        else {
+            setTheme('light-theme');
+        }
+    }
+
     useEffect(() => {
         document.documentElement.style.setProperty('--first-color', color);
+        localStorage.setItem('color', color);
     }, [color]);
+
+    useEffect(() => {
+        document.documentElement.className = theme;
+    }, [theme]);
 
     return (
         <div>
@@ -26,8 +50,8 @@ const Themes = () => {
                 >
                     <FaCog/>
                 </div>
-                <div className={"theme-toggler"}>
-                    <BsMoon/>
+                <div className={"theme-toggler"} onClick={toggleTheme}>
+                    {theme === 'light-theme' ?  <BsMoon/> : <BsSun/>}
                 </div>
 
                 <h3 className={"style__switcher-title"}>
@@ -35,7 +59,7 @@ const Themes = () => {
                     <div className={"style__switcher-items"}>
                         {themes.map((theme, index) => {
                             return (
-                                <ThemeItem key={index} {...theme} changeColor = {changeColor} />
+                                <ThemeItem key={index} {...theme} changeColor={changeColor}/>
                             )
                         })}
                     </div>
