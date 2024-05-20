@@ -34,6 +34,8 @@ const About = () => {
                     </div>
                 </div>
 
+                <div className={"separator"}></div>
+
                 <div className={"stats grid"}>
                     <Stats/>
                 </div>
