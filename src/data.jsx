@@ -9,12 +9,12 @@ import {
 } from 'react-icons/fa';
 import {FiFileText, FiUser, FiExternalLink} from 'react-icons/fi';
 
-import Work1 from './assets/project-1.jpeg';
-import Work2 from './assets/project-2.jpg';
-import Work3 from './assets/project-3.jpeg';
-import Work4 from './assets/project-4.jpeg';
-import Work5 from './assets/project-5.jpg';
-import Work6 from './assets/project-6.jpg';
+import Work1 from './assets/prj-1.jpeg';
+import Work2 from './assets/prj-2.gif';
+import Work3 from './assets/prj-3.png';
+import Work4 from './assets/prj-4.gif';
+import Work5 from './assets/prj-5.webp';
+import Work6 from './assets/prj6.gif';
 
 import Theme1 from './assets/purple.png';
 import Theme2 from './assets/red.png';
@@ -277,6 +277,7 @@ export const portfolio = [
                 icon: <FiExternalLink/>,
                 title: 'Preview : ',
                 desc: 'https://ecoengage.netlify.app',
+                link: 'https://ecoengage.netlify.app',
             },
         ],
     },
@@ -301,11 +302,11 @@ export const portfolio = [
                 title: 'Language : ',
                 desc: 'React.js, TypeScript, MongoDB, Express.js, jQuery, Mapbox API.',
             },
-            {
-                icon: <FiExternalLink/>,
-                title: 'Preview : ',
-                desc: 'www.dribble.com',
-            },
+            // {
+            //     icon: <FiExternalLink/>,
+            //     title: 'Preview : ',
+            //     desc: 'www.dribble.com',
+            // },
         ],
     },
 
@@ -331,8 +332,8 @@ export const portfolio = [
             },
             {
                 icon: <FiExternalLink/>,
-                title: 'Preview : ',
-                desc: '/CustomerSegmentation',
+                title: 'GitHub',
+                link: 'https://github.com/sakshiwadaskar/CustomerSegmentationRecommender',
             },
         ],
     },
@@ -359,8 +360,8 @@ export const portfolio = [
             },
             {
                 icon: <FiExternalLink/>,
-                title: 'Preview : ',
-                desc: 'www.dribble.com',
+                title: 'GitHub',
+                link: 'https://github.com/sakshiwadaskar/EnterpriseEcosystem',
             },
         ],
     },
@@ -387,8 +388,8 @@ export const portfolio = [
             },
             {
                 icon: <FiExternalLink/>,
-                title: 'Preview : ',
-                desc: 'www.dribble.com',
+                title: 'GitHub',
+                link: 'https://github.com/sakshiwadaskar/NoteHub'
             },
         ],
     },
@@ -415,8 +416,8 @@ export const portfolio = [
             },
             {
                 icon: <FiExternalLink/>,
-                title: 'Preview : ',
-                desc: 'www.dibble.com',
+                title: 'GitHub',
+                link: 'https://github.com/sakshiwadaskar/DigitalEducationPlatform'
             },
         ],
     },

@@ -1,4 +1,5 @@
-import React from "react";
+import React, {useState} from "react";
+import emailjs from "emailjs-com";
 import {
     FaEnvelopeOpen,
     FaPhoneSquareAlt,
@@ -12,8 +13,47 @@ import {
 import {FiSend} from "react-icons/fi";
 import "./contact.css"
 
-const Contact =() => {
-    return(
+const Contact = () => {
+
+    const [formData, setFormData] = useState({
+        name: "",
+        email: "",
+        subject: "",
+        message: ""
+    });
+
+    const handleChange = (e) => {
+        const {name, value} = e.target;
+        setFormData({
+            ...formData,
+            [name]: value
+        });
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        console.log("form dataaa:-------------------------------------------------" , formData.name, formData.message, formData.email)
+
+        emailjs.send(
+            'service_0n5tmjd',
+            'template_nkx4o88',
+            formData,
+            '98UXAKgVig_6mnA8S'
+        ).then((response) => {
+            console.log('SUCCESS!', response.status, response.text);
+        }).catch((err) => {
+            console.log('FAILED...', err);
+        });
+
+        setFormData({
+            name: "",
+            email: "",
+            subject: "",
+            message: ""
+        });
+    };
+
+    return (
         <section className={"contact section"}>
             <h2 className={"section__title"}>
                 Get In <span>Touch!</span>
@@ -24,7 +64,8 @@ const Contact =() => {
                     <h3 className={"contact__title"}> Let's have a quick chat!</h3>
                     <p className={"contact__description"}>
                         I'm eager to connect and explore internship and co-op opportunities.
-                        As a Master's student in Computer Software Engineering, I am excited to contribute and grow professionally.
+                        As a Master's student in Computer Software Engineering, I am excited to contribute and grow
+                        professionally.
                         Please feel free to reach out to discuss potential opportunities.
                     </p>
 
@@ -60,19 +101,28 @@ const Contact =() => {
 
                 </div>
 
-                <form action={""} className={"contact_form"}>
+                <form action={""} className={"contact_form"} onSubmit={handleSubmit}>
                     <div className={"form__input-group"}>
                         <div className={"form__input-div"}>
                             <input type={"text"}
                                    placeholder={'Your Name'}
                                    className={"form__control"}
+
+                                   value={formData.name}
+                                   onChange={handleChange}
+                                   required
+                                   name="name"
                             />
                         </div>
 
                         <div className={"form__input-div"}>
                             <input type={"email"}
+                                   name="email"
                                    placeholder={'Your Email'}
                                    className={"form__control"}
+                                   value={formData.email}
+                                   onChange={handleChange}
+                                   required
                             />
                         </div>
 
@@ -80,15 +130,26 @@ const Contact =() => {
                             <input type={"text"}
                                    placeholder={'Your Subject'}
                                    className={"form__control"}
+
+                                   name="subject"
+                                   value={formData.subject}
+                                   onChange={handleChange}
+                                   required
                             />
                         </div>
                     </div>
 
-                        <div className={"form__input-div"}>
+                    <div className={"form__input-div"}>
                             <textarea placeholder={"Your Message"}
-                                className={"form__control textarea"}>
+                                      className={"form__control textarea"}
+
+                                      name="message"
+                                      value={formData.message}
+                                      onChange={handleChange}
+                                      required
+                            >
                             </textarea>
-                        </div>
+                    </div>
 
                     <button className={"button"}>
                         Send Message
@@ -101,4 +162,5 @@ const Contact =() => {
         </section>
     )
 }
+
 export default Contact;

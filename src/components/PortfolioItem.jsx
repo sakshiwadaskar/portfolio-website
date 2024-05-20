@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import Close from "../assets/close.svg"
-const PortfolioItem =( {img, title, details}) => {
+
+const PortfolioItem = ({img, title, details}) => {
     const [modal, setModal] = useState(false);
     const toggleModal = () => {
         setModal(!modal);
@@ -18,12 +19,14 @@ const PortfolioItem =( {img, title, details}) => {
                         <img src={Close} alt={''} className={"modal__close"} onClick={toggleModal}/>
                         <h3 className={"modal__title"}>{title}</h3>
                         <ul className={"modal__list grid"}>
-                            {details.map(({icon, title, desc}, index) => {
+                            {details.map(({icon, title, desc,link}, index) => {
                                 return (
                                     <li className={"modal__item"} key={index}>
-                                    <span className={"item__icon"}>
+                                        <a href={link}>
+                                         <span className={"item__icon"}>
                                         {icon}
-                                    </span>
+                                        </span>
+                                        </a>
 
                                         <div>
                                         <span className={"item__title"}>
