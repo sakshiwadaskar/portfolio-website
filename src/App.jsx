@@ -30,7 +30,7 @@ function App() {
                         <a href={"https://www.linkedin.com/sakshiwadaskar"} className={"contact__social-link"}>
                             <FaLinkedin/>
                         </a>
-                        <a href={"https://www.instagram.com/sakshiwadaskar"} className={"contact__social-link"}>
+                        <a href={"https://www.instagram.com/heyimsakshi"} className={"contact__social-link"}>
                             <FaInstagram/>
                         </a>
                     </div>
