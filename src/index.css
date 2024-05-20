@@ -186,7 +186,6 @@
     .nav__toggle {
         top:20px;
         right: 15px;
-
     }
 
     .nav__link {
@@ -266,9 +265,31 @@
     .stats__box {
         padding: 15px 15px 25px 20px;
     }
+
+    .style__switcher-toggler,
+    .theme-toggler {
+        width: 30px;
+        height: 30px;
+    }
+
+    .style__switcher-toggler {
+        top: -15%;
+    }
+
+    .theme-toggler {
+        bottom: 70%;
+    }
+
+    .style__switcher-close {
+        top: 5%;
+    }
 }
 
 @media screen and (max-width: 350px) {
+
+    .container {
+        max-width: 220px;
+    }
     .home__title span {
         display: inline;
     }

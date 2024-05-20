@@ -131,6 +131,14 @@ img {
     margin-bottom: 70px ;
 }
 
+.section__details {
+    color: var(--text-white);
+    font-size: var(--h3-font-size);
+    font-weight: var(--weight-800);
+    text-align: center;
+    margin-top: 70px ;
+}
+
 .section__title span {
     color: var(--first-color);
 

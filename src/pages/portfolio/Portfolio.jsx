@@ -13,6 +13,10 @@ const Portfolio =() => {
                     return <PortfolioItem key={item.id} {...item}/>
                 })}
             </div>
+            <p className={"section__details"}>
+
+                Click on a card to view detailed information about the project.
+            </p>
         </section>
     )
 }
