@@ -157,15 +157,15 @@
     padding-left: 26px;
 }
 
-.resume__subtitle span::before {
-    content: '';
-    position: absolute;
-    left: 7px;
-    top: 9px;
-    width: 10px;
-    height: 2px;
-    background-color: var(--text-color);
-}
+/*.resume__subtitle span::before {*/
+/*    content: '';*/
+/*    position: absolute;*/
+/*    left: 7px;*/
+/*    top: 9px;*/
+/*    width: 10px;*/
+/*    height: 2px;*/
+/*    background-color: var(--text-color);*/
+/*}*/
 
 .resume__description {
     font-size: var(--small-font-size);

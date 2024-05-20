@@ -100,6 +100,17 @@ export const stats = [
         no: '10+',
         title: 'Completed <br /> Projects',
     },
+
+    {
+        id: 3,
+        no: '35+',
+        title: 'Acquired <br /> Skills',
+    },
+    {
+        id: 4,
+        no: '1+',
+        title: 'Awards <br /> Won',
+    },
 ];
 
 export const resume = [
@@ -176,26 +187,68 @@ export const skills = [
 
     {
         id: 5,
-        title: 'Wordpress',
+        title: 'Java',
         percentage: '95',
     },
 
+
     {
         id: 6,
-        title: 'Jquery',
+        title: 'Python',
         percentage: '50',
     },
 
     {
         id: 7,
         title: 'Angular',
-        percentage: '65',
+        percentage: '35',
     },
 
     {
         id: 8,
         title: 'React',
+        percentage: '65',
+    },
+
+    {
+        id: 9,
+        title: 'Material UI',
+        percentage: '70',
+    },
+    {
+        id: 10,
+        title: 'Bootstrap',
         percentage: '45',
+    },
+    {
+        id: 11,
+        title: 'Tailwind CSS',
+        percentage: '45',
+    },
+    {
+        id: 12,
+        title: 'MongoDB',
+        percentage: '75',
+    },
+    {
+        id: 13,
+        title: 'Node.js',
+        percentage: '90',
+    },
+    {
+        id: 14,
+        title: 'Express.js',
+        percentage: '90',
+    },
+    {
+        id: 15,
+        title: 'Spring Boot',
+        percentage: '25',
+    },
+    {
+        id: 13,
+        title: 'SQL',
+        percentage: '85',
     },
 ];
 

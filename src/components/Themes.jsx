@@ -7,17 +7,24 @@ import "./themes.css"
 import themeItem from "./ThemeItem.jsx";
 
 const getStorageColor = () => {
-    let color = 'hsl(252, 35%, 52%)';
+    let color = 'hsl(271, 76%, 53%)';
     if (localStorage.getItem('color')) {
         color = localStorage.getItem('color');
     }
     return color;
 }
 
+const getStorageTheme = () => {
+    let theme = 'dark-theme';
+    if (localStorage.getItem('theme')) {
+        theme = localStorage.getItem('theme');
+    }
+    return theme;
+}
 const Themes = () => {
     const [showSwitcher, setShowSwitcher] = useState(false);
     const [color, setColor] = useState(getStorageColor());
-    const [theme, setTheme] = useState('light-theme');
+    const [theme, setTheme] = useState(getStorageTheme());
 
 
     const changeColor = (color) => {
@@ -40,6 +47,7 @@ const Themes = () => {
 
     useEffect(() => {
         document.documentElement.className = theme;
+        localStorage.setItem('theme', theme);
     }, [theme]);
 
     return (
