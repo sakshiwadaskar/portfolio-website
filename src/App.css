@@ -157,6 +157,9 @@ img {
 }
 
 footer {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Arrange items in a column */
+    align-items: center; /* Center items horizontally */
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -164,4 +167,26 @@ footer {
     color: var(--text-white);
     padding: 1rem;
     text-align: center;
+}
+
+.contact__socials {
+    display: flex;
+    column-gap: 16px;
+    margin-top: 0.5rem; /* Add some space between text and social icons */
+}
+
+.contact__social-link {
+    background-color: var(--container-color);
+    color: var(--title-color);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px; /* Adjusted to align icon vertically */
+    transition: all 0.3s ease;
+}
+
+.contact__social-link:hover {
+    background-color: var(--first-color);
+    color: var(--text-white);
 }

@@ -2,12 +2,12 @@
 .info__list,
 .stats,
 .resume__container{
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: flex-start;
 }
 
 .info__list {
-    grid-template-columns: repeat(2, 1fr);
     align-items: center;
     flex-wrap: wrap; /* Allow items to wrap to the next row */
     justify-content: center; /* Center items horizontally */
