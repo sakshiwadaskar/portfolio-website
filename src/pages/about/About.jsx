@@ -36,6 +36,9 @@ const About = () => {
 
                 <div className={"separator"}></div>
 
+                <h3 className={"section__subtitle subtitle__center"}>
+                    Stats
+                </h3>
                 <div className={"stats grid"}>
                     <Stats/>
                 </div>

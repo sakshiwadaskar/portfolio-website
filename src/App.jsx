@@ -27,7 +27,7 @@ function App() {
                         <a href={"https://github.com/sakshiwadaskar"} className={"contact__social-link"}>
                             <FaGithub/>
                         </a>
-                        <a href={"https://www.linkedin.com/sakshiwadaskar"} className={"contact__social-link"}>
+                        <a href={"https://www.linkedin.com/in/sakshiwadaskar/"} className={"contact__social-link"}>
                             <FaLinkedin/>
                         </a>
                         <a href={"https://www.instagram.com/heyimsakshi"} className={"contact__social-link"}>

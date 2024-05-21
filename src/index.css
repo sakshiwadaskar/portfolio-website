@@ -127,9 +127,9 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
-   .contact__container {
-       row-gap: 48px;
-   }
+    .contact__container {
+        row-gap: 48px;
+    }
 }
 
 @media screen and (max-width: 768px){

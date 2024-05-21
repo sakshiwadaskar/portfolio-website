@@ -192,7 +192,8 @@ footer {
     display: flex; /* Use flexbox for layout */
     flex-direction: column; /* Arrange items in a column */
     align-items: center; /* Center items horizontally */
-    position: relative;
+    position: fixed;
+    left: 0 ;
     bottom: 0;
     width: 100%;
     background-color: var(--first-color); /* Dark blue */
