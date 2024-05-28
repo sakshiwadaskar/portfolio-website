@@ -406,8 +406,8 @@ export const portfolio = [
             },
             {
                 icon: <FiUser/>,
-                title: 'Client : ',
-                desc: 'Dribble',
+                title: 'Date : ',
+                desc: 'Sep 2023 to Dec 2023',
             },
             {
                 icon: <FaCode/>,
