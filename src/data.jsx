@@ -119,7 +119,7 @@ export const resume = [
         category: 'experience',
         icon: <FaBriefcase/>,
         year: 'April 2022  - August 2023',
-        title: 'Senior Software Engineer-<span>Thoughtworks, Pune, MH, India</span>',
+        title: 'Software Engineer-<span>Thoughtworks, Pune, MH, India</span>',
         desc: 'Tech Stack: Java, WebSocket, AWS Lambda, EC2, RDS, Elasticsearch',
     },
 
