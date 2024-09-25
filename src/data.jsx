@@ -276,8 +276,8 @@ export const portfolio = [
             {
                 icon: <FiExternalLink/>,
                 title: 'Preview : ',
-                desc: 'https://ecoengage.netlify.app',
-                link: 'https://ecoengage.netlify.app',
+                desc: 'https://eco-engage-web-application.vercel.app',
+                link: 'https://eco-engage-web-application.vercel.app',
             },
         ],
     },
