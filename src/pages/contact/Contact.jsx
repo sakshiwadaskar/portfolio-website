@@ -82,7 +82,7 @@ const Contact = () => {
                             <FaPhoneSquareAlt className={"info__icon"}/>
                             <div>
                                 <span className={"info__title"}>Call me </span>
-                                <h4 className={"info__description"}>+1 857 800 4265</h4>
+                                <h4 className={"info__description"}>+1(657)867-2189</h4>
                             </div>
                         </div>
                     </div>
