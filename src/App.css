@@ -192,7 +192,7 @@ footer {
     display: flex; /* Use flexbox for layout */
     flex-direction: column; /* Arrange items in a column */
     align-items: center; /* Center items horizontally */
-    position: fixed;
+    position: relative;
     left: 0 ;
     bottom: 0;
     width: 100%;
