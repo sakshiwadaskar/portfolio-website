@@ -78,7 +78,7 @@ export const personalInfo = [
     {
         id: 7,
         title: 'Phone : ',
-        description: '+18578004265',
+        description: '+16578672189',
     },
 
     {
@@ -118,22 +118,22 @@ export const resume = [
         id: 1,
         category: 'experience',
         icon: <FaBriefcase/>,
-        year: 'April 2022  - August 2023',
-        title: 'Software Engineer-<span>Thoughtworks, Pune, MH, India</span>',
-        desc: 'Tech Stack: Java, WebSocket, AWS Lambda, EC2, RDS, Elasticsearch',
+        year: 'April 2021  - August 2023',
+        title: 'Software Engineer<span>Thoughtworks, Pune, MH, India</span>',
+        desc: 'Tech Stack: Java, WebSocket, AWS Lambda, EC2, RDS, Elasticsearch, Webpack, React.js, Python Flask, Redis, JUnit, Mockito, Jenkins, Docker, SpringBoot',
     },
+
+//     {
+//         id: 2,
+//         category: 'experience',
+//         icon: <FaBriefcase/>,
+//         year: 'April 2021 - April 2022',
+//         title: 'Software Engineer<span>Thoughtworks, Pune, MH, India </span>',
+//         desc: 'Tech Stack: Webpack, React.js, Python Flask, Redis, JUnit, Mockito, Jenkins, Docker, Angular.js',
+//     },
 
     {
         id: 2,
-        category: 'experience',
-        icon: <FaBriefcase/>,
-        year: 'April 2021 - April 2022',
-        title: 'Software Engineer-<span>Thoughtworks, Pune, MH, India </span>',
-        desc: 'Tech Stack: Webpack, React.js, Python Flask, Redis, JUnit, Mockito, Jenkins, Docker, Angular.js',
-    },
-
-    {
-        id: 3,
         category: 'experience',
         icon: <FaBriefcase/>,
         year: 'November 2020 - March 2021',
@@ -163,7 +163,7 @@ export const resume = [
 export const skills = [
     {
         id: 1,
-        title: 'Html',
+        title: 'HTML5',
         percentage: '98',
     },
 
@@ -175,13 +175,13 @@ export const skills = [
 
     {
         id: 3,
-        title: 'Css',
+        title: 'CSS3',
         percentage: '70',
     },
 
     {
         id: 4,
-        title: 'Typescript',
+        title: 'TypeScript',
         percentage: '66',
     },
 
@@ -250,6 +250,47 @@ export const skills = [
         title: 'SQL',
         percentage: '85',
     },
+    {
+        id: 14,
+        title: 'GraphQL',
+        percentage: '65',
+    },
+    {
+        id: 15,
+        title: 'Vue',
+        percentage: '65',
+    },
+    {
+        id: 16,
+        title: 'Azure Cloud',
+        percentage: '65',
+    },
+    {
+        id: 17,
+        title: 'AWS RDS',
+        percentage: '65',
+    },
+    {
+        id: 18,
+        title: 'AWS S3',
+        percentage: '65',
+    },
+    {
+        id: 19,
+        title: 'AWS EC2',
+        percentage: '65',
+    },
+    {
+        id: 20,
+        title: 'AWS Lambda',
+        percentage: '65',
+    },
+    {
+        id: 21,
+        title: 'C/C++',
+        percentage: '65',
+    },
+
 ];
 
 export const portfolio = [
@@ -276,8 +317,8 @@ export const portfolio = [
             {
                 icon: <FiExternalLink/>,
                 title: 'Preview : ',
-                desc: 'https://eco-engage-web-application.vercel.app',
-                link: 'https://eco-engage-web-application.vercel.app',
+                desc: 'https://ecoengage.netlify.app',
+                link: 'https://ecoengage.netlify.app',
             },
         ],
     },

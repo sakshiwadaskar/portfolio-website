@@ -3,8 +3,8 @@ import Info from "../../components/Info.jsx";
 import Stats from "../../components/Stats.jsx";
 import Skills from "../../components/Skills.jsx"
 import ResumeItem from "../../components/ResumeItem.jsx"
-import {FaDownload} from "react-icons/fa";
-import CV from "../../assets/SakshiWadaskar.pdf"
+// import {FaDownload} from "react-icons/fa";
+// import CV from "../../assets/SakshiWadaskar.pdf"
 import "./about.css"
 import {resume} from "../../data.jsx";
 
@@ -36,13 +36,16 @@ const About = () => {
 
                 <div className={"separator"}></div>
 
-                <h3 className={"section__subtitle subtitle__center"}>
-                    Stats
-                </h3>
-                <div className={"stats grid"}>
-                    <Stats/>
-                </div>
             </section>
+
+                            <section>
+                                                <h3 className={"section__subtitle subtitle__center"}>
+                                                    Stats
+                                                </h3>
+                                                <div className={"stats grid"}>
+                                                    <Stats/>
+                                                </div>
+                                </section>
 
             <div className={"separator"}></div>
 
