@@ -114,8 +114,16 @@ export const stats = [
 ];
 
 export const resume = [
+        {
+            id: 1,
+            category: 'experience',
+            icon: <FaBriefcase/>,
+            year: 'January 2025 - Present',
+            title: 'Software Engineer Co-op<span>Annaly Capital Management, New York, NY, USA </span>',
+            desc: 'Tech Stack: React.js, Python Flask, Redis, Jenkins, Docker, Kakfa, ETL',
+        },
     {
-        id: 1,
+        id: 2,
         category: 'experience',
         icon: <FaBriefcase/>,
         year: 'April 2021  - August 2023',
@@ -137,7 +145,7 @@ export const resume = [
         category: 'experience',
         icon: <FaBriefcase/>,
         year: 'November 2020 - March 2021',
-        title: 'Graduate Software Engineer-<span>Viprush Technologies, Nagpur, India</span>',
+        title: 'Software Engineer Intern-<span>Viprush Technologies, Nagpur, India</span>',
         desc: 'Tech Stack: TensorFlow, NLP (Natural Language Processing), Computer Vision techniques, SQL',
     },
 
