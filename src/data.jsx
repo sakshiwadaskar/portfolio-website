@@ -15,6 +15,8 @@ import Work3 from './assets/prj-3.png';
 import Work4 from './assets/prj-4.gif';
 import Work5 from './assets/prj-5.webp';
 import Work6 from './assets/prj6.gif';
+import Work7 from './assets/project-finintel.png';
+import Work8 from './assets/project-healthbot.png';
 
 import Theme1 from './assets/purple.png';
 import Theme2 from './assets/red.png';
@@ -114,43 +116,41 @@ export const stats = [
 ];
 
 export const resume = [
-        {
-            id: 1,
-            category: 'experience',
-            icon: <FaBriefcase/>,
-            year: 'January 2025 - Present',
-            title: 'Software Engineer Co-op<span>Annaly Capital Management, New York, NY, USA </span>',
-            desc: 'Tech Stack: React.js, Python Flask, Redis, Jenkins, Docker, Kakfa, ETL',
-        },
+    {
+        id: 1,
+        category: 'experience',
+        icon: <FaBriefcase/>,
+        year: 'February 2026 - Present',
+        title: 'Full Stack AI Engineer<span>Saayam For All, Washington, DC (Remote)</span>',
+        desc: 'Architected a multi-agent AI routing system using BART classification to orchestrate OpenAI and Gemini LLM calls via function calling, reducing query latency by 85%. Built an LLM evaluation framework benchmarking 630+ tokens/second throughput, applying prompt engineering to optimize agentic AI quality and reliability in production.',
+    },
     {
         id: 2,
         category: 'experience',
         icon: <FaBriefcase/>,
-        year: 'April 2021  - August 2023',
+        year: 'January 2025 - December 2025',
+        title: 'Software Engineer<span>Annaly Capital Management, New York, NY, USA</span>',
+        desc: 'Refactored 18+ Flask microservices with OAuth 2.0/JWT standardization via API Gateway and centralized ELK Stack logging, cutting system debugging time by 35%. Built an on-prem document AI pipeline using OCR (ocrmypdf), LangChain, and a vision-model fallback to extract structured trade data from PDF deal confirmations, achieving 99%+ field accuracy with 65% less manual entry. Architected a distributed, event-driven system for repo collateral margin calculations and mREIT trade processing using idempotent Kafka consumers, sustaining 99.99% uptime under high-volume production load. Reduced API latency by 40% for 3TB+ trade pricing datasets via PostgreSQL indexing and Redis caching.',
+    },
+    {
+        id: 3,
+        category: 'experience',
+        icon: <FaBriefcase/>,
+        year: 'April 2022 - August 2023',
         title: 'Software Engineer<span>Thoughtworks, Pune, MH, India</span>',
-        desc: 'Tech Stack: Java, WebSocket, AWS Lambda, EC2, RDS, Elasticsearch, Webpack, React.js, Python Flask, Redis, JUnit, Mockito, Jenkins, Docker, SpringBoot',
+        desc: 'Designed serverless microservices on AWS Lambda for inventory management and ETL data-compaction flows, cutting infrastructure costs by 25% via event-driven architecture. Led technical discovery sessions with clients to translate stakeholder requirements into functional designs, increasing SDLC velocity.',
     },
-
-//     {
-//         id: 2,
-//         category: 'experience',
-//         icon: <FaBriefcase/>,
-//         year: 'April 2021 - April 2022',
-//         title: 'Software Engineer<span>Thoughtworks, Pune, MH, India </span>',
-//         desc: 'Tech Stack: Webpack, React.js, Python Flask, Redis, JUnit, Mockito, Jenkins, Docker, Angular.js',
-//     },
-
-    {
-        id: 2,
-        category: 'experience',
-        icon: <FaBriefcase/>,
-        year: 'November 2020 - March 2021',
-        title: 'Software Engineer Intern-<span>Viprush Technologies, Nagpur, India</span>',
-        desc: 'Tech Stack: TensorFlow, NLP (Natural Language Processing), Computer Vision techniques, SQL',
-    },
-
     {
         id: 4,
+        category: 'experience',
+        icon: <FaBriefcase/>,
+        year: 'April 2021 - April 2022',
+        title: 'Graduate Software Engineer<span>Thoughtworks, Pune, MH, India</span>',
+        desc: 'Accelerated React/TypeScript bundle performance via code splitting and memoization, cutting load times by 55% for 50K+ global users. Enhanced e-commerce UI responsiveness by implementing windowed rendering with react-window and optimizing GraphQL data-fetching, reducing client-side latency by 32% across high-traffic product pages.',
+    },
+
+    {
+        id: 5,
         category: 'education',
         icon: <FaGraduationCap/>,
         year: '2020',
@@ -159,7 +159,7 @@ export const resume = [
     },
 
     {
-        id: 5,
+        id: 6,
         category: 'education',
         icon: <FaGraduationCap/>,
         year: '2012',
@@ -304,6 +304,54 @@ export const skills = [
 export const portfolio = [
     {
         id: 1,
+        img: Work7,
+        title: 'Automated Financial Intelligence & Valuation Platform',
+        details: [
+            {
+                icon: <FiFileText/>,
+                title: 'Project : ',
+                desc: 'Business health dashboard that analyzes P&L statements (CSV, PDF, text) in under 60 seconds. Claude Sonnet extracts structured metrics, generates a weighted health score (0-100) against industry benchmarks, and surfaces interactive scenario sliders for real-time assumption modeling.',
+            },
+            {
+                icon: <FaCode/>,
+                title: 'Language : ',
+                desc: 'Python, React.js, FastAPI, Claude SDK, RAG',
+            },
+            {
+                icon: <FiExternalLink/>,
+                title: 'Live : ',
+                desc: 'https://biz-health-dashboard.vercel.app/',
+                link: 'https://biz-health-dashboard.vercel.app/',
+            },
+        ],
+    },
+
+    {
+        id: 2,
+        img: Work8,
+        title: 'AI Health Advisory Agent',
+        details: [
+            {
+                icon: <FiFileText/>,
+                title: 'Project : ',
+                desc: 'AI health advisory agent answering personalized wellness queries via conversational vector search. RAG pipeline built with LangChain and a vector database, served via FastAPI.',
+            },
+            {
+                icon: <FaCode/>,
+                title: 'Language : ',
+                desc: 'Python, FastAPI, LangChain, Vector DB, Gemma',
+            },
+            {
+                icon: <FiExternalLink/>,
+                title: 'Live : ',
+                desc: 'https://health-advisor-bot.onrender.com/',
+                link: 'https://health-advisor-bot.onrender.com/',
+            },
+        ],
+    },
+
+    {
+        id: 3,
         img: Work1,
         title: 'Eco Engage Portal',
         details: [
@@ -332,7 +380,7 @@ export const portfolio = [
     },
 
     {
-        id: 2,
+        id: 4,
         img: Work2,
         title: 'Interactive Travel Planner',
         details: [
@@ -360,7 +408,7 @@ export const portfolio = [
     },
 
     {
-        id: 3,
+        id: 5,
         img: Work3,
         title: 'Segmentation & Recommender',
         details: [
@@ -388,7 +436,7 @@ export const portfolio = [
     },
 
     {
-        id: 4,
+        id: 6,
         img: Work4,
         title: 'Enterprise Ecosystem',
         details: [
@@ -416,7 +464,7 @@ export const portfolio = [
     },
 
     {
-        id: 5,
+        id: 7,
         img: Work5,
         title: 'NoteHub',
         details: [
@@ -444,7 +492,7 @@ export const portfolio = [
     },
 
     {
-        id: 6,
+        id: 8,
         img: Work6,
         title: 'Digital Education Platform',
         details: [
@@ -470,6 +518,7 @@ export const portfolio = [
             },
         ],
     },
+
 ];
 
 export const themes = [
