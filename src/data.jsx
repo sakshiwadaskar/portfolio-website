@@ -17,6 +17,7 @@ import Work5 from './assets/prj-5.webp';
 import Work6 from './assets/prj6.gif';
 import Work7 from './assets/project-finintel.png';
 import Work8 from './assets/project-healthbot.png';
+import Work9 from './assets/project-schemadrift.png';
 
 import Theme1 from './assets/purple.png';
 import Theme2 from './assets/red.png';
@@ -53,9 +54,55 @@ export const links = [
 
     {
         id: 4,
+        name: 'Builds',
+        icon: <FaCode className='nav__icon'/>,
+        path: '/builds',
+    },
+
+    {
+        id: 5,
         name: 'Contact',
         icon: <FaEnvelopeOpen className='nav__icon'/>,
         path: '/contact',
+    },
+];
+
+export const recentBuilds = [
+    {
+        id: 1,
+        img: Work7,
+        title: 'CapitalMirror — Automated SMB Financial Health & M&A Analytics Dashboard',
+        tagline: 'Credit score, but for your business.',
+        desc: 'Paste or upload a P&L. Get a health score, AI insights, and live assumption sliders, in under 60 seconds. A rapid-prototype full-stack analytics platform built to solve the core data friction point in SMB M&A: the trust and validation gap in raw seller financials. Normalizes unstructured, messy financial inputs into reliable, institutional-grade valuation insights for prospective buyers.',
+        stack: ['Python', 'FastAPI', 'React 19', 'TypeScript', 'Claude Sonnet', 'Recharts', 'Vercel'],
+        live: 'https://biz-health-dashboard.vercel.app/',
+    },
+    {
+        id: 2,
+        img: Work8,
+        title: 'AI Health Advisory Agent',
+        tagline: 'Conversational wellness guidance, powered by RAG.',
+        desc: 'Built and deployed an AI health advisory agent that answers general wellness questions through conversational vector search. Architected an end-to-end RAG pipeline with LangChain and a Chroma vector database, serving Gemma via a FastAPI backend, then containerized and deployed it live with Docker.',
+        stack: ['Python', 'FastAPI', 'LangChain', 'ChromaDB', 'Gemma', 'Docker'],
+        live: 'https://health-advisor-bot.onrender.com/',
+    },
+    {
+        id: 3,
+        img: Work9,
+        title: 'Schema-Drift Auto-Healing Pipeline',
+        tagline: 'An agent that patches its own config.',
+        desc: 'Agentic pipeline that validates vendor CSV schemas against a rule-based config and escalates unresolved column drift to Gemini for structured mapping. Deterministic checks gate every LLM call; on high confidence the system self-heals its own config so the same drift never triggers an LLM call again, and on low confidence it quarantines the file for human review instead of risking a silent bad write.',
+        stack: ['Python', 'LangChain', 'Pydantic', 'Gemini 2.5 Flash', 'pandas'],
+        live: 'https://github.com/sakshiwadaskar/schema-drift-poc',
+    },
+    {
+        id: 4,
+        img: Work1,
+        title: 'EcoEngage Portal',
+        tagline: 'Community engagement for climate action.',
+        desc: 'An end-to-end web application designed to inspire climate action and foster community engagement around sustainability. Led development of secure, high-performance RESTful APIs using Node.js and Express.js, implementing OAuth 2.0 for secure user authentication and JWT for scalable, stateless session management. Integrated MongoDB for resilient data storage, enabling efficient management of user profiles and environmental data.',
+        stack: ['React', 'TypeScript', 'Node.js', 'Express.js', 'MongoDB', 'OAuth 2.0', 'JWT'],
+        live: 'https://eco-engage-web-application.vercel.app/',
     },
 ];
 
@@ -352,6 +399,29 @@ export const portfolio = [
 
     {
         id: 3,
+        img: Work9,
+        title: 'Schema-Drift Auto-Healing Pipeline',
+        details: [
+            {
+                icon: <FiFileText/>,
+                title: 'Project : ',
+                desc: 'Agentic pipeline that validates vendor CSV schemas against a rule-based config and escalates unresolved column drift to Gemini for structured mapping, self-healing the config on high confidence or quarantining the file for human review on low confidence.',
+            },
+            {
+                icon: <FaCode/>,
+                title: 'Language : ',
+                desc: 'Python, LangChain, Pydantic, Gemini 2.5 Flash, pandas',
+            },
+            {
+                icon: <FiExternalLink/>,
+                title: 'GitHub',
+                link: 'https://github.com/sakshiwadaskar/schema-drift-poc',
+            },
+        ],
+    },
+
+    {
+        id: 4,
         img: Work1,
         title: 'Eco Engage Portal',
         details: [
@@ -380,7 +450,7 @@ export const portfolio = [
     },
 
     {
-        id: 4,
+        id: 5,
         img: Work2,
         title: 'Interactive Travel Planner',
         details: [
@@ -408,7 +478,7 @@ export const portfolio = [
     },
 
     {
-        id: 5,
+        id: 6,
         img: Work3,
         title: 'Segmentation & Recommender',
         details: [
@@ -436,7 +506,7 @@ export const portfolio = [
     },
 
     {
-        id: 6,
+        id: 7,
         img: Work4,
         title: 'Enterprise Ecosystem',
         details: [
@@ -464,7 +534,7 @@ export const portfolio = [
     },
 
     {
-        id: 7,
+        id: 8,
         img: Work5,
         title: 'NoteHub',
         details: [
@@ -492,7 +562,7 @@ export const portfolio = [
     },
 
     {
-        id: 8,
+        id: 9,
         img: Work6,
         title: 'Digital Education Platform',
         details: [
