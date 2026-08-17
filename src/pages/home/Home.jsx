@@ -1,10 +1,13 @@
 import React from "react";
 import Profile from "../../assets/photo.jpg"
 import {Link} from 'react-router-dom';
-import {FaArrowRight} from "react-icons/fa";
+import {FaArrowRight, FaRegCommentDots} from "react-icons/fa";
+import {useChatBot} from "../../context/ChatBotContext.jsx";
 import "./home.css"
 
 const Home = () => {
+    const {openChat} = useChatBot();
+
     return (
         <section className='home section grid'>
             <img src={Profile} alt='' className='home__img'/>
@@ -16,17 +19,24 @@ const Home = () => {
                         <h4>Software Engineer</h4>
                     </h1>
                     <p className={'home__description'}>
-                        I'm a passionate full-stack software engineer with a knack for turning complex problems into
-                        elegant solutions. With a strong foundation in both front-end and back-end technologies,
-                        I thrive on crafting intuitive user interfaces and developing robust server-side logic.
-                        Explore my work and see how I bring ideas to life through code.
+                        I build production AI systems and full-stack applications — from agentic LLM pipelines
+                        to distributed backend infrastructure. Explore my work below, or ask my AI assistant
+                        anything about my experience.
                     </p>
 
-                    <Link to='/about' className='button'>
-                        More About Me
-                        <span className={'button__icon'}><FaArrowRight/>
-                        </span>
-                    </Link>
+                    <div className={'home__cta-group'}>
+                        <Link to='/about' className='button'>
+                            More About Me
+                            <span className={'button__icon'}><FaArrowRight/>
+                            </span>
+                        </Link>
+
+                        <button onClick={openChat} className='button button--outline'>
+                            Ask My AI Assistant
+                            <span className={'button__icon'}><FaRegCommentDots/>
+                            </span>
+                        </button>
+                    </div>
                 </div>
             </div>
 

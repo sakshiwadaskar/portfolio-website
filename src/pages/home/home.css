@@ -48,6 +48,19 @@
     margin-block: 16px 32px;
 }
 
+.home__cta-group {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 16px;
+}
+
+.home__cta-group .button--outline {
+    background: none;
+    cursor: pointer;
+    font-family: var(--second-font);
+}
+
 .color__block {
     position: fixed;
     height: 200%;

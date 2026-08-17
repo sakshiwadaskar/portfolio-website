@@ -3,8 +3,8 @@ import Info from "../../components/Info.jsx";
 import Stats from "../../components/Stats.jsx";
 import Skills from "../../components/Skills.jsx"
 import ResumeItem from "../../components/ResumeItem.jsx"
-// import {FaDownload} from "react-icons/fa";
-// import CV from "../../assets/SakshiWadaskar.pdf"
+import {FaDownload} from "react-icons/fa";
+import CV from "../../assets/SakshiWadaskar.pdf"
 import "./about.css"
 import {resume} from "../../data.jsx";
 
@@ -25,12 +25,12 @@ const About = () => {
                             <Info/>
                         </ul>
 
-{/*                         <a href={CV} download={''} className={"button"}> */}
-{/*                             Download CV */}
-{/*                             <span className={"button__icon"}> */}
-{/*                             <FaDownload/> */}
-{/*                             </span> */}
-{/*                         </a> */}
+                        <a href={CV} download={'Sakshi-Wadaskar-CV.pdf'} className={"button"}>
+                            Download CV
+                            <span className={"button__icon"}>
+                            <FaDownload/>
+                            </span>
+                        </a>
                     </div>
                 </div>
 
