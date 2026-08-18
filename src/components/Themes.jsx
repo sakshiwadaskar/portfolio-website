@@ -7,7 +7,7 @@ import "./themes.css"
 import themeItem from "./ThemeItem.jsx";
 
 const getStorageColor = () => {
-    let color = 'hsl(15, 45%, 45%)';
+    let color = 'hsl(210, 14%, 42%)';
     if (localStorage.getItem('color')) {
         color = localStorage.getItem('color');
     }

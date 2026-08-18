@@ -590,8 +590,8 @@ export const portfolio = [
 export const themes = [
     {
         id: 1,
-        img: Theme1,
-        color: 'hsl(15, 45%, 45%)',
+        img: Theme5,
+        color: 'hsl(210, 14%, 42%)',
     },
 
     {
@@ -614,8 +614,8 @@ export const themes = [
 
     {
         id: 5,
-        img: Theme5,
-        color: 'hsl(210, 14%, 42%)',
+        img: Theme1,
+        color: 'hsl(15, 45%, 45%)',
     },
 
     {

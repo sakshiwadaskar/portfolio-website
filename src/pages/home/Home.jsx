@@ -1,48 +1,35 @@
 import React from "react";
 import Profile from "../../assets/photo.jpg"
 import {Link} from 'react-router-dom';
-import {FaArrowRight, FaRegCommentDots} from "react-icons/fa";
-import {useChatBot} from "../../context/ChatBotContext.jsx";
+import {FaArrowRight} from "react-icons/fa";
+import HomeChatPanel from "../../components/HomeChatPanel.jsx";
 import "./home.css"
 
 const Home = () => {
-    const {openChat} = useChatBot();
-
     return (
-        <section className='home section grid'>
-            <img src={Profile} alt='' className='home__img'/>
-
-            <div className='home__content'>
-                <div className={'home__data'}>
+        <section className='home section container grid'>
+            <div className={'home__data'}>
+                <div className={'home__byline'}>
+                    <img src={Profile} alt='' className='home__avatar'/>
                     <span className={'home__eyebrow'}>Software Engineer · AI Systems</span>
-                    <h1 className={'home__title'}>
-                        Hello, I'm <span>Sakshi Wadaskar</span>
-                    </h1>
-                    <p className={'home__description'}>
-                        I build production AI systems and full-stack applications — from agentic LLM pipelines
-                        to distributed backend infrastructure. Explore my work below, or ask my AI assistant
-                        anything about my experience.
-                    </p>
-
-                    <div className={'home__cta-group'}>
-                        <Link to='/about' className='button'>
-                            More About Me
-                            <span className={'button__icon'}><FaArrowRight/>
-                            </span>
-                        </Link>
-
-                        <button onClick={openChat} className='button button--outline'>
-                            Ask My AI Assistant
-                            <span className={'button__icon'}><FaRegCommentDots/>
-                            </span>
-                        </button>
-                    </div>
                 </div>
+                <h1 className={'home__title'}>
+                    Hello, I'm <span>Sakshi Wadaskar</span>
+                </h1>
+                <p className={'home__description'}>
+                    I build production AI systems and full-stack applications — from agentic LLM pipelines
+                    to distributed backend infrastructure. Explore my work below, or ask my AI assistant
+                    anything about my experience.
+                </p>
+
+                <Link to='/about' className='button'>
+                    More About Me
+                    <span className={'button__icon'}><FaArrowRight/>
+                    </span>
+                </Link>
             </div>
 
-            <div className={'color__block'}>
-
-            </div>
+            <HomeChatPanel/>
         </section>
     )
 

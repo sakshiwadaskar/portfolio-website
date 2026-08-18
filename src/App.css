@@ -6,7 +6,7 @@
 :root {
     /*===== Colors — warm neutral palette  =======*/
     /* Color mode HSL (hue, saturation, lightness) */
-    --first-color: hsl(15, 45%, 45%);
+    --first-color: hsl(210, 14%, 42%);
     --title-color: hsl(20, 10%, 15%);
     --text-color: hsl(20, 6%, 40%);
     --body-color: hsl(36, 25%, 97%);

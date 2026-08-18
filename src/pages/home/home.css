@@ -1,23 +1,36 @@
 .home {
-    grid-template-columns: 4.32fr 7.68fr;
+    grid-template-columns: 0.85fr 1.15fr;
     align-items: center;
-    padding: 40px;
-    height: 100vh;
-}
-
-.home__img {
-    height: 100%;
-    object-fit: cover;
-    border-radius: 4px;
-    border: 1px solid var(--border-color);
-    box-shadow: 0 0 8px hsla(0, 0%, 0%, 0.3);
-    z-index: 1;
+    gap: 60px;
+    padding-block: 90px;
 }
 
 .home__data {
-    max-width: 600px;
-    margin-inline: auto;
-    padding-top: 20px;
+    max-width: 480px;
+}
+
+.home__byline {
+    display: flex;
+    align-items: center;
+    column-gap: 14px;
+    margin-bottom: 22px;
+}
+
+.home__avatar {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid var(--border-color);
+    flex-shrink: 0;
+}
+
+.home__byline .home__eyebrow {
+    margin-bottom: 0;
+}
+
+.home__byline .home__eyebrow::before {
+    display: none;
 }
 
 .home__eyebrow {
@@ -57,25 +70,56 @@
     margin-block: 20px 32px;
 }
 
-.home__cta-group {
+.home__chat-panel {
+    display: flex;
+    flex-direction: column;
+    height: 560px;
+    background-color: var(--container-color);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.home__chat-header {
+    position: static;
+}
+
+.home__chat-suggestions {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    gap: 16px;
+    gap: 8px;
+    padding: 14px 16px 0;
 }
 
-.home__cta-group .button--outline {
-    background: none;
+.home__chat-chip {
+    font-family: var(--body-font);
+    font-size: var(--tiny-font-size);
+    color: var(--text-color);
+    background-color: var(--body-color);
+    border: 1px solid var(--border-color);
+    border-radius: 2px;
+    padding: 6px 12px;
     cursor: pointer;
-    font-family: var(--second-font);
+    text-align: left;
+    transition: border-color 0.2s ease, color 0.2s ease;
 }
 
-.color__block {
-    position: fixed;
-    height: 200%;
-    width: 100%;
-    background-color: var(--first-color);
-    top: -50%;
-    left: -83%;
-    transform: rotate(-12deg);
+.home__chat-chip:hover {
+    border-color: var(--first-color);
+    color: var(--first-color);
+}
+
+@media screen and (max-width: 1024px) {
+    .home {
+        grid-template-columns: 1fr;
+        padding-block: 50px;
+    }
+
+    .home__data {
+        max-width: none;
+    }
+
+    .home__chat-panel {
+        height: 480px;
+    }
 }
