@@ -5,6 +5,7 @@ import Skills from "../../components/Skills.jsx"
 import ResumeItem from "../../components/ResumeItem.jsx"
 import {FaDownload} from "react-icons/fa";
 import CV from "../../assets/SakshiWadaskar.pdf"
+import Profile from "../../assets/photo.jpg"
 import "./about.css"
 import {resume} from "../../data.jsx";
 
@@ -16,6 +17,9 @@ const About = () => {
                 <h2 className={'section__title'}>
                     About <span>Me</span>
                 </h2>
+                <p className={"about__quote"}>
+                    "I turn messy, ambiguous problems into production-grade AI systems."
+                </p>
 
                 <div className={'about__container grid'}>
                     <div className={"about__info"}>
@@ -33,6 +37,8 @@ const About = () => {
                             </span>
                         </a>
                     </div>
+
+                    <img src={Profile} alt='' className={"about__photo"}/>
                 </div>
 
                 <div className={"separator"}></div>

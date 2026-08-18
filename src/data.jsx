@@ -6,6 +6,11 @@ import {
     FaBriefcase,
     FaGraduationCap,
     FaCode,
+    FaMapMarkerAlt,
+    FaPhoneAlt,
+    FaCalendarAlt,
+    FaLaptopCode,
+    FaTrophy,
 } from 'react-icons/fa';
 import {FiFileText, FiUser, FiExternalLink} from 'react-icons/fi';
 
@@ -105,29 +110,34 @@ export const recentBuilds = [
 export const personalInfo = [
     {
         id: 1,
+        icon: <FaUser/>,
         title: 'First Name : ',
         description: 'Sakshi',
     },
 
     {
         id: 2,
+        icon: <FaUser/>,
         title: 'Last Name : ',
         description: 'Wadaskar',
     },
     {
         id: 6,
+        icon: <FaMapMarkerAlt/>,
         title: 'Address : ',
         description: 'Boston, MA, USA',
     },
 
     {
         id: 7,
+        icon: <FaPhoneAlt/>,
         title: 'Phone : ',
         description: '+16578672189',
     },
 
     {
         id: 8,
+        icon: <FaEnvelopeOpen/>,
         title: 'Email : ',
         description: 'wadaskar.s@northeastern.edu',
     },
@@ -136,23 +146,27 @@ export const personalInfo = [
 export const stats = [
     {
         id: 1,
+        icon: <FaCalendarAlt/>,
         no: '3',
         title: 'Years of <br /> Experience',
     },
 
     {
         id: 2,
+        icon: <FaLaptopCode/>,
         no: '10+',
         title: 'Completed <br /> Projects',
     },
 
     {
         id: 3,
+        icon: <FaCode/>,
         no: '35+',
         title: 'Acquired <br /> Skills',
     },
     {
         id: 4,
+        icon: <FaTrophy/>,
         no: '1+',
         title: 'Awards <br /> Won',
     },
