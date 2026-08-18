@@ -54,12 +54,13 @@ const Contact = () => {
     };
 
     return (
-        <section className={"contact section"}>
+        <section className={"contact section container"}>
+            <span className={"section__eyebrow"}>04 — Get In Touch</span>
             <h2 className={"section__title"}>
                 Get In <span>Touch!</span>
             </h2>
 
-            <div className={".contact__container container grid"}>
+            <div className={"contact__container container grid"}>
                 <div className={"contact__data"}>
                     <h3 className={"contact__title"}> Let's have a quick chat!</h3>
                     <p className={"contact__description"}>

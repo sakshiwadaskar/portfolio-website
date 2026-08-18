@@ -5,7 +5,8 @@ import "./portfolio.css"
 
 const Portfolio =() => {
     return(
-        <section className={"portfolio section"}>
+        <section className={"portfolio section container"}>
+            <span className={"section__eyebrow"}>02 — Selected Work</span>
             <h2 className={"section__title"}> My <span>Projects</span></h2>
 
             <div className={"portfolio__container container grid"}>

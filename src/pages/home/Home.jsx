@@ -14,9 +14,9 @@ const Home = () => {
 
             <div className='home__content'>
                 <div className={'home__data'}>
+                    <span className={'home__eyebrow'}>Software Engineer · AI Systems</span>
                     <h1 className={'home__title'}>
-                        <span>Hello, I'm Sakshi Wadaskar</span>
-                        <h4>Software Engineer</h4>
+                        Hello, I'm <span>Sakshi Wadaskar</span>
                     </h1>
                     <p className={'home__description'}>
                         I build production AI systems and full-stack applications — from agentic LLM pipelines

@@ -5,7 +5,8 @@ import "./builds.css";
 
 const Builds = () => {
     return (
-        <section className={"builds section"}>
+        <section className={"builds section container"}>
+            <span className={"section__eyebrow"}>03 — Latest Work</span>
             <h2 className={"section__title"}> Recent <span>Builds</span></h2>
 
             <div className={"builds__container container grid"}>

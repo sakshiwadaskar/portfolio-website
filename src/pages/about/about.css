@@ -20,6 +20,8 @@
 }
 
 .section__subtitle {
+    font-family: var(--second-font);
+    font-style: italic;
     font-size: var(--h3-font-size);
     font-weight: var(--weight-600);
     margin-bottom: 20px;
@@ -39,11 +41,18 @@
 .stats__box {
     border: 1px solid var(--border-color);
     padding: 20px 30px 25px;
-    border-radius: 5px;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+.stats__box:hover {
+    border-color: var(--first-color);
 }
 
 .stats__no {
     color: var(--first-color);
+    font-family: var(--second-font);
+    font-style: italic;
     font-size: var(--h1-font-size);
     line-height: 1.2;
 }
@@ -139,21 +148,24 @@
     color: var(--text-white);
     width: 40px;
     height: 40px;
-    border-radius: 50%;
+    border-radius: 8px;
     text-align: center;
     line-height: 40px;
 }
 
 .resume__date {
     background-color: var(--container-color);
+    border: 1px solid var(--border-color);
     padding: 2px 10px;
-    border-radius: 20px;
+    border-radius: 2px;
     font-size: var(--tiny-font-size);
     font-weight: var(--weight-600)
 }
 .resume__subtitle {
+    font-family: var(--second-font);
+    font-style: italic;
     font-size: var(--large-font-size);
-    font-weight: var(--weight-500);
+    font-weight: var(--weight-600);
     margin-block: 20px 10px;
 }
 

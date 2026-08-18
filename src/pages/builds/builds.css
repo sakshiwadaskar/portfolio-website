@@ -7,15 +7,15 @@
     flex-direction: column;
     background-color: var(--container-color);
     border: 1px solid var(--border-color);
-    border-radius: 12px;
+    border-radius: 4px;
     overflow: hidden;
     color: inherit;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, border-color 0.3s ease;
 }
 
 .build__card:hover {
     transform: translateY(-6px);
-    box-shadow: 0 12px 24px hsla(0, 0%, 0%, 0.12);
+    border-color: var(--first-color);
 }
 
 .build__media {
@@ -43,8 +43,10 @@
 }
 
 .build__title {
+    font-family: var(--second-font);
+    font-style: italic;
     font-size: var(--large-font-size);
-    font-weight: var(--weight-700);
+    font-weight: var(--weight-600);
 }
 
 .build__tagline {
@@ -72,7 +74,7 @@
     color: var(--text-color);
     border: 1px solid var(--border-color);
     padding: 3px 10px;
-    border-radius: 20px;
+    border-radius: 2px;
 }
 
 .build__live {

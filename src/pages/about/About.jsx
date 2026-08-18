@@ -12,6 +12,7 @@ const About = () => {
     return (
         <main className={"section container"}>
             <section className={'about'}>
+                <span className={"section__eyebrow"}>01 — Background</span>
                 <h2 className={'section__title'}>
                     About <span>Me</span>
                 </h2>

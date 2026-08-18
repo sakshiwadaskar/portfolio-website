@@ -4,7 +4,8 @@
 
 .portfolio__item {
     position: relative;
-    border-radius: 10px;
+    border-radius: 4px;
+    border: 1px solid var(--border-color);
     overflow: hidden;
     cursor: pointer;
 }
@@ -31,10 +32,14 @@
 }
 .portfolio__title {
     color: var(--text-white);
+    font-family: var(--second-font);
+    font-style: italic;
     font-size: var(--large-font-size);
     font-weight: var(--weight-500);
     transform: translateY(-20px);
     transition: all 0.5s ease;
+    padding-inline: 20px;
+    text-align: center;
 }
 
 .portfolio__item:hover .portfolio__title {
@@ -53,10 +58,11 @@
 
 .portfolio__modal-content {
     background-color: var(--container-color);
+    border: 1px solid var(--border-color);
     max-width: 650px;
     width: 100%;
     padding: 32px;
-    border-radius: 10px;
+    border-radius: 4px;
     position: relative;
 }
 
@@ -72,8 +78,9 @@
 .modal__title {
     text-align: center;
     color: var(--first-color);
+    font-family: var(--second-font);
+    font-style: italic;
     font-size:  var(--h2-font-size);
-    letter-spacing: 2px;
     margin-bottom: 24px;
 }
 

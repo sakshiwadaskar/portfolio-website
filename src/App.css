@@ -1,25 +1,25 @@
 /*================================  GOOGLE FONTS    ===============================*/
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Poppins:wght@500;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap');
 
 /*================================  CSS Variables   ===============================*/
 
 :root {
-    /*===== Colors  =======*/
+    /*===== Colors — warm neutral palette  =======*/
     /* Color mode HSL (hue, saturation, lightness) */
-    --first-color: hsl(271, 76%, 53%);
-    --title-color: hsl(0, 0%, 40%);
-    --text-color: hsl(0,0%, 50%);
-    --body-color: hsl(0,0%, 100%);
-    --container-color: hsl(0,0%, 93%);
-    --border-color: hsl(0,0%, 87%);
+    --first-color: hsl(15, 45%, 45%);
+    --title-color: hsl(20, 10%, 15%);
+    --text-color: hsl(20, 6%, 40%);
+    --body-color: hsl(36, 25%, 97%);
+    --container-color: hsl(36, 18%, 93%);
+    --border-color: hsl(30, 12%, 85%);
     --text-white: #fff;
 
     /*=======   Font and Typography  =======*/
-    --body-font: 'Open Sans', sans-serif;
-    --second-font: 'Poppins', sans-serif ;
+    --body-font: 'Inter', sans-serif;
+    --second-font: 'Fraunces', serif;
 
-    --big-font-size: 56px;
-    --h1-font-size: 50px;
+    --big-font-size: 60px;
+    --h1-font-size: 52px;
     --h2-font-size: 32px;
     --h3-font-size: 24px;
     --large-font-size: 18px;
@@ -33,15 +33,15 @@
     --weight-500: 500;
     --weight-600: 600;
     --weight-700: 700;
-    --weight-800: 800;
+    --weight-800: 700;
 }
 
 .dark-theme {
-    --title-color: hsl(0, 0%, 100%);
-    --text-color: hsl(0,0%, 80%);
-    --body-color: hsl(0,0%, 7%);
-    --container-color: hsl(0,1%, 17%);
-    --border-color: hsl(0,0%, 15%);
+    --title-color: hsl(36, 20%, 96%);
+    --text-color: hsl(30, 8%, 68%);
+    --body-color: hsl(20, 9%, 9%);
+    --container-color: hsl(20, 8%, 14%);
+    --border-color: hsl(20, 7%, 20%);
 }
 
 /* Responsive Typography */
@@ -124,42 +124,68 @@ img {
     padding-block: 70px;
 }
 
+.section__eyebrow {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+    font-family: var(--body-font);
+    font-size: var(--tiny-font-size);
+    font-weight: var(--weight-600);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--first-color);
+    margin-bottom: 14px;
+}
+
+.section__eyebrow::before {
+    content: '';
+    width: 32px;
+    height: 1px;
+    background-color: var(--first-color);
+}
+
 .section__title {
     font-size: var(--big-font-size);
-    font-weight: var(--weight-800);
-    text-align: center;
-    margin-bottom: 70px ;
+    font-weight: var(--weight-600);
+    font-style: italic;
+    text-align: left;
+    line-height: 1.1;
+    margin-bottom: 50px ;
 }
 
 .section__details {
     color: var(--text-white);
     font-size: var(--h3-font-size);
-    font-weight: var(--weight-800);
+    font-weight: var(--weight-600);
     text-align: center;
     margin-top: 70px ;
 }
 
 .section__title span {
     color: var(--first-color);
-
+    font-style: normal;
 }
 
 .button {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    column-gap: 14px;
     color: var(--title-color);
-    border: 1px solid var(--first-color);
-    padding: 15px 70px 15px 35px;
-    border-radius: 35px;
-    font-family: var(--second-font);
+    border: 1.5px solid var(--title-color);
+    padding: 15px 26px;
+    border-radius: 4px;
+    font-family: var(--body-font);
     font-size: var(--small-font-size);
-    font-weight: var(--weight-500);
+    font-weight: var(--weight-600);
     position: relative;
     overflow: hidden;
-    transition: all 0.25s ease-in-out;
+    z-index: 1;
+    transition: color 0.3s ease, border-color 0.3s ease;
 }
 
 .button:hover {
     color: var(--text-white);
+    border-color: var(--first-color);
 }
 
 .button:before {
@@ -167,25 +193,24 @@ img {
     position: absolute;
     inset: 0;
     background-color: var(--first-color);
-    transform: translateX(100%);
+    transform: scaleX(0);
+    transform-origin: left;
     z-index: -1;
-    transition: all 0.3s ease-out;
+    transition: transform 0.35s cubic-bezier(.65, 0, .35, 1);
 }
 
 .button:hover::before {
-    transform: translateX(0);
+    transform: scaleX(1);
 }
 .button__icon {
-    background-color: var(--first-color);
-    position: absolute;
-    inset-block: -2px;
-    right: 0;
-    width: 55px;
-    border-radius: 50%;
-    color: var(--text-white);
+    display: inline-flex;
+    color: inherit;
     font-size: var(--large-font-size);
-    text-align: center;
-    line-height: 60px;
+    transition: transform 0.3s ease;
+}
+
+.button:hover .button__icon {
+    transform: translateX(4px);
 }
 
 footer {
