@@ -205,9 +205,17 @@ export const resume = [
         title: 'Graduate Software Engineer<span>Thoughtworks, Pune, MH, India</span>',
         desc: 'Accelerated React/TypeScript bundle performance via code splitting and memoization, cutting load times by 55% for 50K+ global users. Enhanced e-commerce UI responsiveness by implementing windowed rendering with react-window and optimizing GraphQL data-fetching, reducing client-side latency by 32% across high-traffic product pages.',
     },
-
     {
         id: 5,
+        category: 'experience',
+        icon: <FaBriefcase/>,
+        year: 'January 2020 - February 2021',
+        title: 'Graduate Software Engineer<span>Viprush Technologies, Nagpur, India</span>',
+        desc: 'Engineered high-throughput image processing APIs in Python enabling sub-millisecond ML inference in production environments.',
+    },
+
+    {
+        id: 6,
         category: 'education',
         icon: <FaGraduationCap/>,
         year: '2020',
@@ -216,7 +224,7 @@ export const resume = [
     },
 
     {
-        id: 6,
+        id: 7,
         category: 'education',
         icon: <FaGraduationCap/>,
         year: '2012',
@@ -228,134 +236,104 @@ export const resume = [
 export const skills = [
     {
         id: 1,
-        title: 'HTML5',
-        percentage: '98',
+        title: 'Python',
+        percentage: '92',
     },
-
     {
         id: 2,
-        title: 'Javascript',
-        percentage: '89',
+        title: 'TypeScript',
+        percentage: '88',
     },
-
     {
         id: 3,
-        title: 'CSS3',
-        percentage: '70',
+        title: 'JavaScript (ES6+)',
+        percentage: '90',
     },
-
     {
         id: 4,
-        title: 'TypeScript',
-        percentage: '66',
+        title: 'Java',
+        percentage: '85',
     },
-
     {
         id: 5,
-        title: 'Java',
-        percentage: '95',
+        title: 'SQL',
+        percentage: '88',
     },
-
-
     {
         id: 6,
-        title: 'Python',
-        percentage: '50',
+        title: 'LangChain',
+        percentage: '85',
     },
-
     {
         id: 7,
-        title: 'Angular',
-        percentage: '35',
+        title: 'RAG / Vector Databases',
+        percentage: '85',
     },
-
     {
         id: 8,
-        title: 'React',
-        percentage: '65',
+        title: 'LLM APIs (Claude, Gemini)',
+        percentage: '88',
     },
-
     {
         id: 9,
-        title: 'Material UI',
-        percentage: '70',
+        title: 'Prompt Engineering',
+        percentage: '85',
     },
     {
         id: 10,
-        title: 'Bootstrap',
-        percentage: '45',
+        title: 'React',
+        percentage: '90',
     },
     {
         id: 11,
-        title: 'Tailwind CSS',
-        percentage: '45',
+        title: 'Redux',
+        percentage: '78',
     },
     {
         id: 12,
-        title: 'MongoDB',
-        percentage: '75',
+        title: 'FastAPI',
+        percentage: '85',
     },
     {
         id: 13,
         title: 'Node.js',
-        percentage: '90',
+        percentage: '88',
     },
     {
         id: 14,
-        title: 'Express.js',
-        percentage: '90',
-    },
-    {
-        id: 15,
         title: 'Spring Boot',
-        percentage: '25',
-    },
-    {
-        id: 13,
-        title: 'SQL',
-        percentage: '85',
-    },
-    {
-        id: 14,
-        title: 'GraphQL',
-        percentage: '65',
+        percentage: '75',
     },
     {
         id: 15,
-        title: 'Vue',
-        percentage: '65',
+        title: 'GraphQL',
+        percentage: '70',
     },
     {
         id: 16,
-        title: 'Azure Cloud',
-        percentage: '65',
+        title: 'Kafka',
+        percentage: '78',
     },
     {
         id: 17,
-        title: 'AWS RDS',
-        percentage: '65',
+        title: 'Redis',
+        percentage: '78',
     },
     {
         id: 18,
-        title: 'AWS S3',
-        percentage: '65',
+        title: 'PostgreSQL',
+        percentage: '82',
     },
     {
         id: 19,
-        title: 'AWS EC2',
-        percentage: '65',
+        title: 'Docker',
+        percentage: '80',
     },
     {
         id: 20,
-        title: 'AWS Lambda',
-        percentage: '65',
+        title: 'AWS',
+        percentage: '80',
     },
-    {
-        id: 21,
-        title: 'C/C++',
-        percentage: '65',
-    },
-
 ];
 
 export const portfolio = [
