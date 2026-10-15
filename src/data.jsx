@@ -344,6 +344,21 @@ export const skills = [
         title: 'Android',
         percentage: '65',
     },
+    {
+        id: 23,
+        title: 'Kubernetes',
+        percentage: '75',
+    },
+    {
+        id: 24,
+        title: 'Git',
+        percentage: '92',
+    },
+    {
+        id: 25,
+        title: 'Claude Code / Copilot',
+        percentage: '90',
+    },
 ];
 
 export const portfolio = [
