@@ -334,6 +334,16 @@ export const skills = [
         title: 'AWS',
         percentage: '80',
     },
+    {
+        id: 21,
+        title: 'React Native',
+        percentage: '70',
+    },
+    {
+        id: 22,
+        title: 'Android',
+        percentage: '65',
+    },
 ];
 
 export const portfolio = [
