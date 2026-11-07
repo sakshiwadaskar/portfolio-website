@@ -3,8 +3,6 @@ import Info from "../../components/Info.jsx";
 import Stats from "../../components/Stats.jsx";
 import Skills from "../../components/Skills.jsx"
 import ResumeItem from "../../components/ResumeItem.jsx"
-import {FaDownload} from "react-icons/fa";
-import CV from "../../assets/SakshiWadaskar.pdf"
 import Profile from "../../assets/photo.jpg"
 import "./about.css"
 import {resume} from "../../data.jsx";
@@ -29,13 +27,6 @@ const About = () => {
                         <ul className={"info__list grid"}>
                             <Info/>
                         </ul>
-
-                        <a href={CV} download={'Sakshi-Wadaskar-CV.pdf'} className={"button"}>
-                            Download CV
-                            <span className={"button__icon"}>
-                            <FaDownload/>
-                            </span>
-                        </a>
                     </div>
 
                     <img src={Profile} alt='' className={"about__photo"}/>
